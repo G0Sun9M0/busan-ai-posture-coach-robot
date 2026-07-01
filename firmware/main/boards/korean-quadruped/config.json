@@ -1,0 +1,21 @@
+{
+    "target": "esp32s3",
+    "builds": [
+        {
+            "name": "korean-quadruped",
+            "sdkconfig_append": [
+                "CONFIG_BOARD_TYPE_KOREAN_QUADRUPED=y",
+                "CONFIG_LANGUAGE_KO_KR=y",
+                "CONFIG_USE_AFE_WAKE_WORD=y",
+                "CONFIG_SR_WN_WN9S_HIESP=y",
+                "CONFIG_SR_WN_WN9_HIESP=y",
+                "CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y",
+                "CONFIG_SPIRAM=y",
+                "CONFIG_SPIRAM_MODE_OCT=y",
+                "CONFIG_SPIRAM_SPEED_80M=y",
+                "CONFIG_PARTITION_TABLE_CUSTOM=y",
+                "CONFIG_PARTITION_TABLE_CUSTOM_FILENAME=\"partitions/v2/16m.csv\""
+            ]
+        }
+    ]
+}

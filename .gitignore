@@ -1,0 +1,17 @@
+# ===== ESP-IDF / 빌드 산출물 =====
+build/
+**/build/
+sdkconfig.old
+**/sdkconfig.old
+
+# ===== 의존성 (idf.py reconfigure 로 복원, dependencies.lock 참조) =====
+managed_components/
+**/managed_components/
+
+# ===== 에디터 / OS =====
+.DS_Store
+**/.DS_Store
+.vscode/
+
+# ===== 오타로 생성된 정크 폴더 =====
+/cd ~/
